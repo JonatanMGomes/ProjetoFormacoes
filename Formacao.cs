@@ -34,11 +34,30 @@ namespace ProjetoFormacoes
         public void SetDuracao(int duracao){
             Duracao = duracao;
         }
-        /*public void DefinirDuracao(){
+        public virtual void DefinirDuracao(){
 
         }
         public double ExibirMedia(double provaSemestralUm, double provaSemestralDois){
-            return (provaSemestralUm+provaSemestralDois)/2;
-        } */
+            var mediaProvasSemestrais = (provaSemestralUm+provaSemestralDois)/2;
+            var mediaTrabalhos = 0;
+            var mediaProvasMensais = 0;
+            var mediaFinal = (mediaProvasSemestrais*0.5)+(mediaTrabalhos*0.2)+(mediaProvasMensais*0.3);
+            return mediaFinal;
+        }
+        public double ExibirMedia(double provaSemestralUm, double provaSemestralDois, double trabalhoUm, double trabalhoDois){
+            var mediaProvasSemestrais = (provaSemestralUm+provaSemestralDois)/2;
+            var mediaTrabalhos = (trabalhoUm+trabalhoDois)/2;
+            var mediaProvasMensais = 0;
+            var mediaFinal = (mediaProvasSemestrais*0.5)+(mediaTrabalhos*0.2)+(mediaProvasMensais*0.3);
+            return mediaFinal;
+        }
+        public double ExibirMedia(double provaSemestralUm, double provaSemestralDois, double trabalhoUm, double trabalhoDois, double provaMensalUm, double provaMensalDois){
+            var mediaProvasSemestrais = (provaSemestralUm+provaSemestralDois)/2;
+            var mediaTrabalhos = (trabalhoUm+trabalhoDois)/2;
+            var mediaProvasMensais = (provaMensalUm+provaMensalDois)/2;
+            var mediaFinal = (mediaProvasSemestrais*0.5)+(mediaTrabalhos*0.2)+(mediaProvasMensais*0.3);
+            return mediaFinal;
+        }
+
     }
 }
