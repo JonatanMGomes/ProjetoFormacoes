@@ -4,7 +4,7 @@ namespace ProjetoFormacoes
     {
         private string ProjetoConclusao { get; set; }
         private int CargaHorariaEstagio { get; set; }
-        public Bacharelado(string projetoConclusao, string descricao, int periodo, int cargaHorariaEstagio) : base(descricao, periodo)
+        public Bacharelado(string descricao, int periodo, string projetoConclusao, int cargaHorariaEstagio) : base(descricao, periodo)
         {
             ProjetoConclusao = projetoConclusao;
             CargaHorariaEstagio = cargaHorariaEstagio;
