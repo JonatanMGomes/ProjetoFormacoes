@@ -4,7 +4,8 @@ namespace ProjetoFormacoes
     {
         private string ProjetoConclusao { get; set; }
         private int CargaHorariaEstagio { get; set; }
-        public Bacharelado(string descricao, int periodo, int cargaHorariaEstagio) : base(descricao, periodo){
+        public Bacharelado(string projetoConclusao, string descricao, int periodo, int cargaHorariaEstagio) : base(descricao, periodo){
+            ProjetoConclusao = projetoConclusao;
             CargaHorariaEstagio = cargaHorariaEstagio;
         }
         public string GetProjetoConclusao(){
@@ -18,6 +19,9 @@ namespace ProjetoFormacoes
         }
         public void SetCargaHorariaEstagio(int cargaHorariaEstagio){
             CargaHorariaEstagio = cargaHorariaEstagio;
+        }
+        public void CalcularMensalidade(double fator){
+            Mensalidade = (Duracao * fator * 8) + (CargaHorariaEstagio * 12);
         }
     }
 }

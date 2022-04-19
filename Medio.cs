@@ -12,5 +12,8 @@ namespace ProjetoFormacoes
         public void SetTipo(string tipo){
             Tipo = tipo;
         }
+        public void CalcularMensalidade(double fator){
+            Mensalidade = Duracao * fator * 7;
+        }
     }
 }

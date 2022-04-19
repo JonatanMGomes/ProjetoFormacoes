@@ -12,5 +12,8 @@ namespace ProjetoFormacoes
         public void SetPlanoEstendido(bool planoEstendido){
             PlanoEstendido = planoEstendido;
         }
+        public void CalcularMensalidade(double fator){
+            Mensalidade = Duracao * fator * 8;
+        }
     }
 }
