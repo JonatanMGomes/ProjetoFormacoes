@@ -31,20 +31,26 @@
                     default:
                         Console.WriteLine("Opção inválida!");
                         criou = false;
-                        formacaoEscolhida = new Medio("Ensino Médio", 1, "normal");
+                        formacaoEscolhida = new Formacao("teste", 1);
                         break;
                 }
             }while (criou == false);
             return formacaoEscolhida;
         }
+        public static void ExibirDados(List<Formacao> listaInformada){
+            for(int contador = 0; contador < listaInformada.Count(); contador++){
+                
+            }
+        }
         public static void IniciarSistema(){
+            List<Formacao> formacoesCadastradas = new List<Formacao>();
             Console.WriteLine("Olá, Seja bem vindo ao nosso sistema! O que deseja Fazer?");
             Console.WriteLine("1 - Cadastrar Formação | 2 - Encerrar");
             string escolha = Console.ReadLine();
             do{
                 switch(escolha){
                     case "1":
-                    CadastrarFormacao();
+                    formacoesCadastradas.Add(CadastrarFormacao());
                     break;
                     case "2":
                     Console.WriteLine("Obrigado por utilizar nosso sistema, tenha um bom dia!");

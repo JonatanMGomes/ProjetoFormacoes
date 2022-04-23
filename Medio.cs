@@ -15,7 +15,7 @@ namespace ProjetoFormacoes
         {
             Tipo = tipo;
         }
-        public void CalcularMensalidade(double fator)
+        public override void CalcularMensalidade(double fator)
         {
             Mensalidade = Duracao * fator * 7;
         }
