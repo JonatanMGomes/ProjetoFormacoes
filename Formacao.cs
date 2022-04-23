@@ -74,6 +74,9 @@ namespace ProjetoFormacoes
             var mediaFinal = (mediaProvasSemestrais * 0.5) + (mediaTrabalhos * 0.2) + (mediaProvasMensais * 0.3);
             return mediaFinal;
         }
+        public virtual void ExibirDados(){
+            
+        }
 
     }
 }

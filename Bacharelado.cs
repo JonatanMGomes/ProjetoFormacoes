@@ -42,5 +42,8 @@ namespace ProjetoFormacoes
                 SetDuracao(48);
             }
         }
+        public override void ExibirDados(){
+            Console.WriteLine($"Descrição: {Descricao}. No periodo: {Periodo} e com carga horaria de estágio:{CargaHorariaEstagio}");
+        }
     }
 }

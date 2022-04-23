@@ -23,5 +23,8 @@ namespace ProjetoFormacoes
         {
             SetDuracao(24);
         }
+        public override void ExibirDados(){
+            Console.WriteLine($"Descrição: {Descricao}. No periodo: {Periodo}. O plano é extendido:{PlanoEstendido}");
+        }
     }
 }

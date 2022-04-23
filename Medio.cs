@@ -23,5 +23,8 @@ namespace ProjetoFormacoes
         {
             SetDuracao(36);
         }
+         public override void ExibirDados(){
+            Console.WriteLine($"Descrição: {Descricao}. No periodo: {Periodo} e do tipo:{Tipo}");
+        }
     }
 }

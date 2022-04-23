@@ -37,9 +37,9 @@
             }while (criou == false);
             return formacaoEscolhida;
         }
-        public static void ExibirDados(List<Formacao> listaInformada){
+        public static void ExibirDadosDasFormacoes(List<Formacao> listaInformada){
             for(int contador = 0; contador < listaInformada.Count(); contador++){
-                
+                listaInformada[contador].ExibirDados();
             }
         }
         public static void IniciarSistema(){
