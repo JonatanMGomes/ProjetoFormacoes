@@ -53,13 +53,15 @@
                     formacoesCadastradas.Add(CadastrarFormacao());
                     break;
                     case "2":
-                    Console.WriteLine("Obrigado por utilizar nosso sistema, tenha um bom dia!");
+                    Console.WriteLine("Obrigado por utilizar nosso sistema, mostraremos a lista atual de formações cadastradas.");
+                    Console.WriteLine("Tenha um bom dia!");
                     break;
                     default:
                     Console.WriteLine("Opção Inválida!");
                     break;
                 }
             } while(escolha != "2");
+            ExibirDadosDasFormacoes(formacoesCadastradas);
         }
     }
 }
